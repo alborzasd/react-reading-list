@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# React Reading List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple react project with CRUD functionality on list of some books.
 
-## Available Scripts
+This project was developed while spending the [Modern React with Redux](https://www.udemy.com/course/react-redux/) course on udemy.
 
-In the project directory, you can run:
+The purpose of this project is learn the basics of React concepts like:
+- State Management
+- Context API
+- Conditional Rendering
+- Form Handling
+- Using built-in and custom hooks
+- Communicate with backend server
 
-### `npm start`
+Theses concepts are used inside enterprise projects also.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Although it's better to use external tools such as redux to manage global state and data, but in this project you will learn how to manage state change correctly so you better understand those external tools
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![overview](./assets/screenshots/screenshot-01.png)
 
-### `npm run build`
+## What application does
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Read list of books from [json-server](https://www.npmjs.com/package/json-server) (can be any backend system) at the first time rendering
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Get a random image from [Lorem Picsum](https://picsum.photos/) for each book item
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Get input title from user and add to global context and also add to json server database
 
-### `npm run eject`
+- Edit and delete the existing book titles
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+    # clone project in your local machine
+    git clone https://github.com/alborzasd/react-reading-list.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    # change directory to the project
+    cd react-reading-lsit
 
-## Learn More
+    # install required packages
+    npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    # run json-server
+    npm run server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    # run react development server
+    npm start
+```
